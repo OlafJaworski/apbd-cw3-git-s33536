@@ -8,14 +8,14 @@ namespace apbd_cw3_s33536.Mod;
 
 using apbd_cw3_s33536;
 
-public class Service
+public class RentalService
 {
     private readonly List<User> _users = new();
     private readonly List<Item> _items = new();
     private readonly List<Rental> _rentals = new();
     private readonly PenaltyCalc _penaltyCalc;
     
-    public Service(PenaltyCalc penaltyCalc)
+    public RentalService(PenaltyCalc penaltyCalc)
     {
         _penaltyCalc = penaltyCalc;
     }
